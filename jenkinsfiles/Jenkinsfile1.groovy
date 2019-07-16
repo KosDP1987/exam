@@ -13,7 +13,21 @@ pipeline {
         jdk '1.8.0_212'
         maven '3'
     }
-    
+    stage('Git checkout') {
+        steps{
+            script{
+                def gitUrl = sh(returnStdout: true, script: 'git config remote.origin.url').trim()
+                checkout([$class: 'GitSCM',
+                          branches: [[name: "${params.BRANCH_NAME}"]],
+                          doGenerateSubmoduleConfigurations: false,
+                          extensions: [[$class: 'CleanCheckout']],
+                          userRemoteConfigs: [[credentialsId: 'jenkins.k8s.do',
+                                               url: gitUrl]]
+                ])
+            }
+        }
+    }
+
     stage('Maven build') {
         buildInfo = rtMaven.run pom: './pom.xml', goals: 'clean install'
     }
