@@ -20,7 +20,7 @@ pipeline {
         stage("mvn compile") {
             steps {
                 withMaven(maven: '3') {
-                    git url: 'https://github.com/KosDP1987/spring-petclinic.git'
+                   // git url: 'https://github.com/KosDP1987/spring-petclinic.git'
                     sh "mvn clean compile"
                 }
             }
