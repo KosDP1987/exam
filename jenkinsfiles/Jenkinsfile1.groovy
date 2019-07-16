@@ -15,11 +15,10 @@ pipeline {
     }
 
     stages {
-
-
         stage("mvn compile") {
             steps {
                 withMaven(maven: '3') {
+                    sh 'chmod 755 ./gradlew'
                    // git url: 'https://github.com/KosDP1987/spring-petclinic.git'
                     sh "mvn clean compile"
                 }
