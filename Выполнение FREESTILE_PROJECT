@@ -1,0 +1,17 @@
+ИТОГОВЫЙ dockerdile:
+
+FROM openjdk 
+WORKDIR /home/app
+COPY target/*.jar /home/app
+
+EXPOSE 8080
+CMD ["java", "-jar","*.jar"]
+
+
+
+В Jenkins вставка скрипта
+
+docker build -t image:v1 .
+docker run -ti -d -p 8585:8080 image:v1 java -jar rd-1.0.${BUILD_NUMBER}-release.jar
+#curl -I http://localhost:8585 -v
+

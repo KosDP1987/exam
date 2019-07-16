@@ -1,0 +1,8 @@
+nexusArtifactUploader artifacts: [[artifactId: 'rd', classifier: '', file: 'target/rd-1.0.${BUILD_NUMBER}-release.jar', type: 'jar']], 
+ credentialsId: 'f97200be-540a-48b1-b401-864a2b89fe65', 
+ groupId: 'pingable', 
+ nexusUrl: '127.0.0.1:8081/nexus', 
+ nexusVersion: 'nexus2', 
+ protocol: 'http', 
+ repository: 'releases', 
+ version: '1.0.${BUILD_NUMBER}-release'
