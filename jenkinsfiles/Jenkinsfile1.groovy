@@ -13,6 +13,10 @@ pipeline {
         jdk '1.8.0_212'
         maven '3'
     }
+    
+    stage('Maven build') {
+        buildInfo = rtMaven.run pom: './pom.xml', goals: 'clean install'
+    }
 
     stages {
         stage("mvn compile") {
