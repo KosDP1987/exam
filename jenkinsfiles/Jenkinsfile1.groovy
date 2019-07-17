@@ -3,7 +3,7 @@ properties ([disableConcurrentBuilds()]) //only one task
 pipeline {
     agent {
         label "master"
-        options {timeatamps () }
+        //options { timeatamps() }
     }
 
     //triggers { pollSCM('* * * * *') }
@@ -13,11 +13,11 @@ pipeline {
         jdk '1.8.0_212'
         maven '3'
     }
-    
 
-    stage('Maven build') {
-        buildInfo = rtMaven.run pom: './pom.xml', goals: 'clean install -q'
+    stages {
+        stage('Maven build') {
+            buildInfo = rtMaven.run pom: './pom.xml', goals: 'clean install -q'
+        }
     }
 
-    
 }
