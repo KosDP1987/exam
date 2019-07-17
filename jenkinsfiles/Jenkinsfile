@@ -22,6 +22,7 @@ pipeline {
         stage("mvn build") {
             steps {
                 withMaven(maven: '3') {
+                    //giturl:'https://github.com/KosDP1987/spring-petclinic.git'
                     sh "mvn clean install -q"
                 }
             }
