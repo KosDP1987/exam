@@ -19,24 +19,5 @@ pipeline {
         buildInfo = rtMaven.run pom: './pom.xml', goals: 'clean install -q'
     }
 
-    stages {
-        stage("mvn compile") {
-            steps {
-                withMaven(maven: '3') {
-                    sh 'chmod 755 ./gradlew'
-                   // git url: 'https://github.com/KosDP1987/spring-petclinic.git'
-                    sh "mvn clean compile"
-                }
-            }
-        }
-
-        stage("mvn depployment") {
-            steps {
-                withMaven(maven: '3') {
-                    sh "mvn clean deploy"
-                }
-            }
-        }
-
-    }
+    
 }
