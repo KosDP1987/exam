@@ -15,9 +15,18 @@ pipeline {
     }
 
     stages {
-        stage('Maven build') {
-            buildInfo = rtMaven.run pom: './pom.xml', goals: 'clean install -q'
+        //stage('Maven build') {
+          //  buildInfo = rtMaven.run pom: './pom.xml', goals: 'clean install -q'
+        //}
+
+        stage("mvn build") {
+            steps {
+                withMaven(maven: '3') {
+                    sh "mvn clean install -q"
+                }
+            }
         }
+
     }
 
 }
