@@ -18,11 +18,9 @@ node {
       archiveArtifacts 'target/*.jar'
    }
 
-   stage('Results') {
-
-      }
-
-
-   }
+    stage ('RUN Container')  {
+        
+	    sh 'docker run -ti -d -p 8088:8080 image:v1 java -jar spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar'
+  }
 
 }

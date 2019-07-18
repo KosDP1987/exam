@@ -1,10 +1,16 @@
 properties ([disableConcurrentBuilds()]) //only one task
 
 pipeline {
+<<<<<<< HEAD
     agent { label "master" }
 
+=======
+    agent {
+        label "master"
+        //options { timeatamps() }
+    }
+>>>>>>> 916f9b12e21e4f7cefaa24b2c890823788f17a33
     //triggers { pollSCM('* * * * *') }
-
     tools {
         // Note: this should match with the tool name configured in your jenkins instance (JENKINS_URL/configureTools/)
         jdk '1.8.0_212'
@@ -12,14 +18,13 @@ pipeline {
     }
 
     stages {
-
         stage('Preparation') {
-            git 'https://github.com/KosDP1987/spring-petclinic.git'
+           // git url:  'https://github.com/KosDP1987/spring-petclinic.git'
         }
 
         stage("mvn build") {
             steps {
-                withMaven(maven: '3') {
+                    withMaven(maven: '3') {
                     sh "mvn clean install -q"
                 }
             }
