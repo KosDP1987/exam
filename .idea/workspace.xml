@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="330c4f92-cb53-4bd4-bcac-d5caac5e61f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/DockerFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jenkinsfiles/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/jenkinsfiles/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jenkinsfiles/Test2_Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/jenkinsfiles/Test2_Jenkinsfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +19,26 @@
     <favorites_list name="! EXAM" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jenkinsfiles/Test2_Jenkinsfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DockerFile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -42,6 +60,7 @@
         <option value="$PROJECT_DIR$/jenkinsfiles/Test_Jenkinsfile" />
         <option value="$PROJECT_DIR$/jenkinsfiles/Jenkinsfile" />
         <option value="$PROJECT_DIR$/jenkinsfiles/Test2_Jenkinsfile" />
+        <option value="$PROJECT_DIR$/DockerFile" />
       </list>
     </option>
   </component>
@@ -52,11 +71,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2007" />
-    <option name="y" value="165" />
-    <option name="width" value="1536" />
-    <option name="height" value="824" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-2" />
+    <option name="y" value="42" />
+    <option name="width" value="1920" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -71,11 +90,6 @@
             <path>
               <item name="! EXAM" type="b2602c69:ProjectViewProjectNode" />
               <item name="! EXAM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="! EXAM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="! EXAM" type="462c0819:PsiDirectoryNode" />
-              <item name="jenkinsfiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -125,14 +139,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2007" y="165" width="1536" height="824" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49791667" visible="true" weight="0.25135502" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8909091" visible="true" weight="0.24899329" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
-      <window_info id="Structure" order="5" sideWeight="0.50208336" side_tool="true" visible="true" weight="0.25135502" />
+      <window_info id="Structure" order="5" sideWeight="0.10909091" side_tool="true" visible="true" weight="0.24899329" />
       <window_info id="Favorites" order="6" sideWeight="0.5011111" side_tool="true" weight="0.1977612" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -142,8 +156,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4993225" visible="true" weight="0.28143713" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006775" side_tool="true" visible="true" weight="0.28143713" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49932885" visible="true" weight="0.27525622" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.27525622" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -244,8 +258,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jenkinsfiles/Test2_Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        <state relative-caret-position="155">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DockerFile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
