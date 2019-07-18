@@ -1,4 +1,5 @@
 node {
+   triggers { pollSCM('* * * * *') }
    def mvnHome
    stage('Preparation') {
       git 'https://github.com/KosDP1987/spring-petclinic.git'
@@ -16,4 +17,12 @@ node {
       junit '**/target/surefire-reports/TEST-*.xml'
       archiveArtifacts 'target/*.jar'
    }
+
+   stage('Results') {
+
+      }
+
+
+   }
+
 }

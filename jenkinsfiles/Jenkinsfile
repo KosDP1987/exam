@@ -1,10 +1,7 @@
 properties ([disableConcurrentBuilds()]) //only one task
 
 pipeline {
-    agent {
-        label "master"
-        //options { timeatamps() }
-    }
+    agent { label "master" }
 
     //triggers { pollSCM('* * * * *') }
 
