@@ -17,7 +17,7 @@ pipeline {
     stages {
 
         stage('Preparation') {
-            git 'https://github.com/KosDP1987/spring-petclinic.git'
+            git url:  'https://github.com/KosDP1987/spring-petclinic.git'
         }
 
         stage("mvn build") {
